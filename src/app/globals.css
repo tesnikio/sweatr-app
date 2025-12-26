@@ -1,0 +1,240 @@
+/* 
+ * Next.js Global Styles
+ * This file combines Tailwind CSS with your original React app styles
+ * - Tailwind CSS utilities and component system
+ * - Original index.css content (if found)
+ * - Original App.css content (if found)
+ */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 210 40% 96%;
+    --secondary-foreground: 222.2 84% 4.9%;
+    --muted: 210 40% 96%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 210 40% 96%;
+    --accent-foreground: 222.2 84% 4.9%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* === Original index.css === */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Sauna Loft - Japandi Design System
+   Warm, minimal, relaxing aesthetic */
+
+@layer base {
+  :root {
+    /* Warm cream background - not pure white */
+    --background: 40 33% 97%;
+    --foreground: 220 20% 20%;
+
+    /* Cards with slight warmth */
+    --card: 40 25% 98%;
+    --card-foreground: 220 20% 20%;
+
+    --popover: 40 25% 98%;
+    --popover-foreground: 220 20% 20%;
+
+    /* Sage green - primary */
+    --primary: 150 25% 45%;
+    --primary-foreground: 40 33% 97%;
+
+    /* Light oak/sand - secondary */
+    --secondary: 35 30% 90%;
+    --secondary-foreground: 220 20% 20%;
+
+    /* Soft muted tones */
+    --muted: 40 20% 92%;
+    --muted-foreground: 220 10% 50%;
+
+    /* Terracotta accent */
+    --accent: 15 50% 60%;
+    --accent-foreground: 40 33% 97%;
+
+    --destructive: 0 60% 50%;
+    --destructive-foreground: 40 33% 97%;
+
+    --border: 40 20% 88%;
+    --input: 40 20% 88%;
+    --ring: 150 25% 45%;
+
+    /* Generous radius for soft corners */
+    --radius: 1.25rem;
+
+    /* Custom sauna-specific tokens */
+    --sage: 150 25% 45%;
+    --sage-light: 150 20% 92%;
+    --oak: 35 40% 75%;
+    --oak-light: 35 30% 90%;
+    --terracotta: 15 50% 60%;
+    --terracotta-light: 15 40% 90%;
+    --charcoal: 220 20% 20%;
+    --cream: 40 33% 97%;
+    --warm-white: 40 25% 98%;
+
+    /* Glass effect */
+    --glass: 40 25% 98% / 0.7;
+    --glass-border: 40 20% 88% / 0.5;
+
+    --sidebar-background: 40 25% 98%;
+    --sidebar-foreground: 220 20% 20%;
+    --sidebar-primary: 150 25% 45%;
+    --sidebar-primary-foreground: 40 33% 97%;
+    --sidebar-accent: 35 30% 90%;
+    --sidebar-accent-foreground: 220 20% 20%;
+    --sidebar-border: 40 20% 88%;
+    --sidebar-ring: 150 25% 45%;
+  }
+
+  .dark {
+    --background: 220 20% 10%;
+    --foreground: 40 20% 92%;
+
+    --card: 220 20% 12%;
+    --card-foreground: 40 20% 92%;
+
+    --popover: 220 20% 12%;
+    --popover-foreground: 40 20% 92%;
+
+    --primary: 150 30% 55%;
+    --primary-foreground: 220 20% 10%;
+
+    --secondary: 220 15% 18%;
+    --secondary-foreground: 40 20% 92%;
+
+    --muted: 220 15% 18%;
+    --muted-foreground: 40 15% 60%;
+
+    --accent: 15 45% 55%;
+    --accent-foreground: 220 20% 10%;
+
+    --destructive: 0 50% 40%;
+    --destructive-foreground: 40 20% 92%;
+
+    --border: 220 15% 20%;
+    --input: 220 15% 20%;
+    --ring: 150 30% 55%;
+
+    --sidebar-background: 220 20% 10%;
+    --sidebar-foreground: 40 20% 92%;
+    --sidebar-primary: 150 30% 55%;
+    --sidebar-primary-foreground: 220 20% 10%;
+    --sidebar-accent: 220 15% 18%;
+    --sidebar-accent-foreground: 40 20% 92%;
+    --sidebar-border: 220 15% 20%;
+    --sidebar-ring: 150 30% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
+  }
+}
+
+@layer utilities {
+  /* Glass effect utility */
+  .glass {
+    @apply bg-warm-white/70 backdrop-blur-md border border-border/50;
+  }
+
+  /* Fade in animation */
+  .fade-in {
+    animation: fadeIn 0.6s ease-out forwards;
+  }
+
+  .fade-in-delay-1 {
+    animation: fadeIn 0.6s ease-out 0.1s forwards;
+    opacity: 0;
+  }
+
+  .fade-in-delay-2 {
+    animation: fadeIn 0.6s ease-out 0.2s forwards;
+    opacity: 0;
+  }
+
+  .fade-in-delay-3 {
+    animation: fadeIn 0.6s ease-out 0.3s forwards;
+    opacity: 0;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(12px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Subtle hover brightness */
+  .hover-brighten {
+    @apply transition-all duration-500 ease-out;
+  }
+
+  .hover-brighten:hover {
+    @apply brightness-105;
+  }
+}
