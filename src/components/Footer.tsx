@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Brand */}
           <div className="lg:col-span-1">
-            <span className="font-serif text-2xl font-medium">Sauna Loft</span>
+            <span className="font-serif text-2xl font-medium">Sweatr</span>
             <p className="text-cream/60 mt-4 text-sm leading-relaxed">
               Discover and book unique sauna experiences. Find your perfect place to breathe.
             </p>
@@ -98,7 +98,7 @@ const Footer = () => {
         {/* Bottom */}
         <div className="border-t border-cream/10 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-sm text-cream/40">
-            © {currentYear} Sauna Loft. All rights reserved.
+            © {currentYear} Sweatr. All rights reserved.
           </p>
           <div className="flex gap-6 text-sm text-cream/60">
             <a href="/privacy" className="hover:text-cream transition-colors">

@@ -14,7 +14,7 @@ const Navbar = () => {
           {/* Logo */}
           <a href="/" className="flex items-center gap-2">
             <span className="font-serif text-2xl font-medium text-foreground">
-              Sauna Loft
+              Sweatr
             </span>
           </a>
 
